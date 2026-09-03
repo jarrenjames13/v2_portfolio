@@ -1,0 +1,402 @@
+{
+  "agentFile": {
+    "filename": "jarren_james.md",
+    "description": "Full-stack software engineer specializing in production web applications, FastAPI backends, TypeScript/React frontends, cloud deployments, testing, performance optimization, and AI-assisted development",
+    "mode": "subagent",
+    "permission": {
+      "edit": "allow",
+      "task": "allow"
+    }
+  },
+  "professionalSummary": {
+    "headline": "Full Stack Developer focused on production systems, scalable web applications, and AI-assisted engineering.",
+    "summary": "Full Stack Developer with 1 year of professional experience building and maintaining production web and mobile applications used by real users. Experienced across frontend, backend, databases, testing, deployment, and cloud infrastructure, with hands-on work using Python, FastAPI, TypeScript, JavaScript, React, React Native, Node.js, Express.js, SQL databases, Docker, GitHub Actions, and AWS. Comfortable owning features end-to-end, debugging production issues, improving application performance, and integrating Generative AI and LLM-powered capabilities into application workflows.",
+    "focusAreas": [
+      "Full Stack Development",
+      "Backend API Development",
+      "Frontend Application Development",
+      "Production Debugging",
+      "Performance Optimization",
+      "Cloud Deployment",
+      "Automated Testing",
+      "AI-Assisted Development",
+      "Generative AI and LLM Integration"
+    ]
+  },
+  "aboutMe": {
+    "name": "Jarren James Parungao",
+    "title": "Full Stack Developer",
+    "location": "Teresa, Rizal, Philippines",
+    "bio": "I am a full-stack developer who enjoys working across the complete software lifecycle, from frontend interfaces and API design to database modeling, testing, deployment, and production support. My professional experience is centered on building systems that are used in real operational environments, including AURORA, a production learning management system and mobile application, and OfficeSales System, an internal sales and e-commerce platform.",
+    "engineeringApproach": "I focus on practical engineering: understanding the actual problem, keeping solutions maintainable, testing critical behavior, and making changes that can be verified in production. I regularly work on authentication, role-based workflows, high-concurrency backend behavior, database performance, CI/CD, and cloud infrastructure.",
+    "aiAssistedWorkflow": "I use AI-assisted coding tools as part of my daily development workflow to accelerate implementation, investigate bugs, review code and implementation approaches, improve testing, identify edge cases, and reduce issues before they reach production. I treat AI as an engineering multiplier while validating outputs against the codebase, tests, documentation, and real application behavior.",
+    "links": {
+      "github": "https://github.com/jarrenjames13",
+      "portfolio": "https://portfolio.jjparungao.online/",
+      "resume": "https://drive.google.com/file/d/19zRRwezzSm-f34geb6QciUC3L70PTna2/view?usp=sharing"
+    }
+  },
+  "techStack": {
+    "languages": ["Python", "TypeScript", "JavaScript", "SQL"],
+    "frontend": [
+      "React",
+      "Next.js",
+      "React Native",
+      "Expo",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Vanilla JavaScript"
+    ],
+    "backend": ["FastAPI", "Node.js", "Express.js", "REST APIs"],
+    "databases": ["MySQL", "PostgreSQL", "Microsoft SQL Server", "MongoDB"],
+    "testing": [
+      "Vitest",
+      "Playwright",
+      "Unit Testing",
+      "End-to-End Testing",
+      "Regression Testing"
+    ],
+    "cloudAndDevOps": [
+      "AWS",
+      "EC2",
+      "S3",
+      "Docker",
+      "GitHub Actions",
+      "CI/CD",
+      "Nginx",
+      "Git",
+      "GitHub"
+    ],
+    "aiAndDeveloperTools": [
+      "Generative AI Integration",
+      "LLM Integration",
+      "AI-Assisted Software Development",
+      "AI-Assisted Debugging",
+      "AI-Assisted Code Review",
+      "AI-Assisted Test Development"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "aurora",
+      "name": "AURORA",
+      "organization": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "description": "AURORA is a production learning management system and mobile application serving thousands of users across learning, assessment, notification, and account workflows.",
+      "featured": true,
+      "wip": false,
+      "images": [
+        {
+          "src": "/projects/aurora/preview.webp",
+          "alt": "AURORA application preview"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "MySQL",
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright"
+      ],
+      "highlights": [
+        "Improved API and database response times by approximately 40% under high-concurrency workloads.",
+        "Contributed across frontend, backend, database, testing, deployment, and infrastructure layers of a production system."
+      ]
+    },
+    {
+      "slug": "aurora-mobile",
+      "name": "AURORA Mobile Application",
+      "organization": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "description": "AURORA is a production learning management system and mobile application serving thousands of users across learning, assessment, notification, and account workflows.",
+      "featured": true,
+      "wip": false,
+      "images": [
+        {
+          "src": "/projects/aurora-mobile/preview.webp",
+          "alt": "AURORA mobile application preview"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "JavaScript",
+        "React Native",
+        "Expo",
+        "MySQL",
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright"
+      ],
+      "highlights": [
+        "Built mobile application features with React Native and Expo while integrating them with FastAPI backend services.",
+        "Supported authentication, permissions, assessments, notifications, and other user-facing mobile workflows."
+      ]
+    },
+    {
+      "slug": "convox",
+      "name": "Convox",
+      "organization": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "description": "Convox is a platform for managing messages and inquiries from students and potential customers through a dashboard, with sales opportunities distributed among employees using a round-robin workflow.",
+      "featured": true,
+      "wip": true,
+      "images": [
+        {
+          "src": "/projects/convox/preview.webp",
+          "alt": "Convox application preview"
+        }
+      ],
+      "technologies": [
+        "Nest.js",
+        "TypeScript",
+        "JavaScript",
+        "MySQL",
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright"
+      ],
+      "highlights": [
+        "Makes message management easier through a centralized dashboard for student and potential-customer inquiries.",
+        "Distributes sales opportunities across employees using a round-robin workflow to balance workloads and incentives."
+      ]
+    },
+
+    {
+      "slug": "calorijuan-mobile",
+      "name": "CaloriJuan",
+      "organization": "Personal Project",
+      "role": "Full Stack Developer",
+      "description": "CaloriJuan is a personal project that serves as a calorie tracking and meal planning application, allowing users to log their meals, track their caloric intake, and plan their diet effectively.",
+      "featured": true,
+      "wip": true,
+      "images": [
+        {
+          "src": "/projects/calorijuan-mobile/preview.webp",
+          "alt": "CaloriJuan application preview"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "MySQL",
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright",
+        "Open Food Facts API",
+        "USDA FoodData Central API",
+        "Generative AI Integration"
+      ],
+      "highlights": [
+        "Provides precise calorie calculations based on the user's meal inputs.",
+        "Allows users to share meals as posts with ingredients, calories, and macronutrients displayed.",
+        "Verifies macronutrient data through Open Food Facts and USDA FoodData Central, with AI suggestions based on meal inputs."
+      ]
+    },
+    {
+      "slug": "cacf-photobooth-ama",
+      "name": "Charlie and the Chocolate Factory Photobooth AMA",
+      "organization": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "description": "Charlie and the Chocolate Factory Photobooth AMA is a web application that allows users to take photos with themed frames and share them on social media, enhancing the event experience for attendees.",
+      "featured": true,
+      "wip": false,
+      "images": [
+        {
+          "src": "/projects/cacf-photobooth-ama/preview.webp",
+          "alt": "Charlie and the Chocolate Factory Photobooth AMA application preview"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "MySQL",
+        "AWS",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright",
+        "QR Code Generation"
+      ],
+      "highlights": [
+        "Saves user-generated images to AWS S3 for durable digital storage.",
+        "Provides QR codes so users can retrieve their images digitally with ease."
+      ]
+    },
+    {
+      "slug": "karen-bot",
+      "name": "Karen",
+      "organization": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "description": "Karen is a monitoring bot that tracks the status of services on an EC2 instance and sends notifications to a Telegram group when issues arise. It provides commands such as /status and /docker, along with nightly scan reports using AI to summarize service and server status.",
+      "featured": true,
+      "wip": false,
+      "images": [
+        {
+          "src": "/projects/karen-bot/preview.webp",
+          "alt": "Karen monitoring bot preview"
+        }
+      ],
+      "technologies": ["Python", "Telegram Bot API", "Amazon EC2", "AWS", "GitHub Actions", "Generative AI Integration"],
+      "highlights": [
+        "Makes issues on EC2 servers easier to detect through monitoring and Telegram notifications.",
+        "Enables server checks and issue management without an SSH connection through Telegram API commands."
+      ]
+    },
+    {
+      "slug": "frame-snap",
+      "name": "Frame Snap",
+      "organization": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "description": "Frame Snap is an improved, configurable version of the Charlie and the Chocolate Factory Photobooth AMA project. It lets users take photos with reusable themed frames while supporting digital retrieval and sharing.",
+      "featured": true,
+      "wip": true,
+      "images": [
+        {
+          "src": "/projects/frame-snap/preview.webp",
+          "alt": "Frame Snap application preview"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "MySQL",
+        "AWS",
+        "AWS S3",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright",
+        "Dynamic Image Composition",
+        "PDF Generation",
+        "QR Code Generation"
+      ],
+      "highlights": [
+        "Improves on the static CACF Photobooth by allowing backgrounds to change when image dimensions and the transparent window remain consistent.",
+        "Generates PDFs with QR codes, saves images to AWS S3, and displays QR-enabled images for easy retrieval."
+      ]
+    },
+    {
+      "slug": "officesales-system",
+      "name": "OfficeSales System",
+      "organization": "Monheim Distributors Inc.",
+      "role": "Full Stack Developer",
+      "description": "OfficeSales System is an internal full-stack sales and e-commerce platform supporting product management, inventory, ordering, authentication, and administration workflows.",
+      "featured": true,
+      "wip": false,
+      "images": [
+        {
+          "src": "/projects/officesales-system/preview.webp",
+          "alt": "OfficeSales System application preview"
+        }
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Microsoft SQL Server",
+        "JavaScript",
+        "Git"
+      ],
+      "highlights": [
+        "Worked on a real internal business application rather than a tutorial or portfolio-only project.",
+        "Gained end-to-end experience across frontend, backend, database, authentication, and deployment workflows."
+      ]
+    }
+  ],
+  "professionalJourney": [
+    {
+      "company": "AMA Educational System Holdings Inc.",
+      "role": "Full Stack Developer",
+      "period": {
+        "start": "2025-09",
+        "end": null,
+        "label": "September 2025 - Present"
+      },
+      "overview": "Develop and maintain AURORA, a production learning management system and mobile application serving thousands of users. Work across backend APIs, frontend and mobile features, databases, testing, CI/CD, deployment, infrastructure, performance optimization, and AI-powered application functionality.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "TypeScript",
+        "JavaScript",
+        "React Native",
+        "Expo",
+        "MySQL",
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Vitest",
+        "Playwright"
+      ],
+      "responsibilities": [
+        "Design, build, and optimize RESTful APIs supporting authentication, assessments, notifications, database operations, and other application workflows.",
+        "Develop mobile application features using React Native, Expo, and TypeScript while integrating frontend applications with FastAPI backend services.",
+        "Work with authentication, permissions, role-based behavior, and user-facing application workflows.",
+        "Write and maintain automated unit and end-to-end tests using Vitest and Playwright.",
+        "Build and maintain GitHub Actions CI/CD pipelines, Dockerized deployment environments, and AWS EC2 infrastructure.",
+        "Investigate and resolve production issues across APIs, databases, application behavior, deployments, and infrastructure.",
+        "Integrate AWS S3-based storage and application workflows to improve scalability.",
+        "Integrate Generative AI and LLM-powered capabilities into application workflows.",
+        "Use AI-assisted development tools daily for implementation, debugging, code review, testing, and early issue detection."
+      ],
+      "highlights": [
+        "Improved API and database response times by approximately 40% under high-concurrency workloads.",
+        "Contributed across frontend, backend, database, testing, deployment, and infrastructure layers of a production system."
+      ]
+    },
+    {
+      "company": "Monheim Distributors Inc.",
+      "role": "Full Stack Developer",
+      "period": {
+        "start": "2025-02",
+        "end": "2025-04",
+        "label": "February 2025 - April 2025"
+      },
+      "overview": "Developed and maintained OfficeSales System, an internal full-stack sales and e-commerce platform supporting operational business workflows including product management, inventory, ordering, and administration.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Microsoft SQL Server",
+        "JavaScript",
+        "Git"
+      ],
+      "responsibilities": [
+        "Built reusable and responsive React components for product browsing, inventory management, ordering, and administrative workflows.",
+        "Designed and developed RESTful backend APIs using Node.js and Express.js.",
+        "Implemented authentication and secure application workflows.",
+        "Designed and optimized relational database structures supporting inventory, orders, products, and internal business operations.",
+        "Participated in testing, debugging, application integration, version control, and deployment."
+      ],
+      "highlights": [
+        "Worked on a real internal business application rather than a tutorial or portfolio-only project.",
+        "Gained end-to-end experience across frontend, backend, database, authentication, and deployment workflows."
+      ]
+    }
+  ]
+}
