@@ -259,24 +259,31 @@
           "alt": "Karen monitoring bot preview"
         }
       ],
-      "technologies": ["Python", "Telegram Bot API", "Amazon EC2", "AWS", "GitHub Actions", "Generative AI Integration"],
+      "technologies": [
+        "Python",
+        "Telegram Bot API",
+        "Amazon EC2",
+        "AWS",
+        "GitHub Actions",
+        "Generative AI Integration"
+      ],
       "highlights": [
         "Makes issues on EC2 servers easier to detect through monitoring and Telegram notifications.",
         "Enables server checks and issue management without an SSH connection through Telegram API commands."
       ]
     },
     {
-      "slug": "frame-snap",
-      "name": "Frame Snap",
+      "slug": "snap-frame",
+      "name": "SnapFrame",
       "organization": "AMA Educational System Holdings Inc.",
       "role": "Full Stack Developer",
-      "description": "Frame Snap is an improved, configurable version of the Charlie and the Chocolate Factory Photobooth AMA project. It lets users take photos with reusable themed frames while supporting digital retrieval and sharing.",
+      "description": "SnapFrame is an improved, configurable version of the Charlie and the Chocolate Factory Photobooth AMA project. It lets users take photos with reusable themed frames while supporting digital retrieval and sharing.",
       "featured": true,
-      "wip": true,
+      "wip": false,
       "images": [
         {
-          "src": "/projects/frame-snap/preview.webp",
-          "alt": "Frame Snap application preview"
+          "src": "/projects/snap-frame/preview.webp",
+          "alt": "SnapFrame application preview"
         }
       ],
       "technologies": [
