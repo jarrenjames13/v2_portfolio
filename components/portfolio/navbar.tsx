@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 import { MobileNavigation } from "@/components/portfolio/mobile-navigation";
-import { getHomeAnchor, navigationItems } from "@/lib/portfolio-data";
+import { SectionNavigation } from "@/components/portfolio/section-navigation";
+import { ThemeToggle } from "@/components/portfolio/theme-toggle";
 
 export function Navbar({ fromProjectsPage = false }: { fromProjectsPage?: boolean }) {
   return (
@@ -14,19 +15,11 @@ export function Navbar({ fromProjectsPage = false }: { fromProjectsPage?: boolea
           James Parungao
         </Link>
 
-        <nav aria-label="Main navigation" className="hidden items-center gap-6 lg:flex">
-          {navigationItems.map((item) => (
-            <Link
-              key={item.href}
-              href={getHomeAnchor(item.href, fromProjectsPage)}
-              className="py-2 text-[13px] text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <MobileNavigation fromProjectsPage={fromProjectsPage} />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <SectionNavigation fromProjectsPage={fromProjectsPage} />
+          <ThemeToggle />
+          <MobileNavigation fromProjectsPage={fromProjectsPage} />
+        </div>
       </div>
     </header>
   );

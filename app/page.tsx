@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, FileText, GitBranch, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Download, FileText, GitBranch, MapPin } from "lucide-react";
 
 import { AgentTerminal } from "@/components/portfolio/agent-terminal";
 import { ContactSection } from "@/components/portfolio/contact-section";
@@ -73,16 +73,15 @@ export default function Home() {
                   </a>
                 ) : null}
                 {links.resume ? (
-                  <Link
+                  <a
                     href={links.resume}
-                    target="_blank"
-                    rel="noreferrer"
+                    download
                     className={buttonVariants({ variant: "ghost", size: "lg" })}
                   >
                     <FileText aria-hidden="true" />
                     Resume
-                    <ArrowUpRight aria-hidden="true" data-icon="inline-end" />
-                  </Link>
+                    <Download aria-hidden="true" data-icon="inline-end" />
+                  </a>
                 ) : null}
               </div>
 

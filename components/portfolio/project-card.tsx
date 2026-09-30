@@ -101,7 +101,7 @@ export function ProjectCard({
 
         <DialogTrigger
           aria-label={`Open ${project.name} project images and details`}
-          className="absolute inset-0 z-10 rounded-xl bg-transparent focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-ring"
+          className="absolute inset-0 z-10 cursor-pointer rounded-xl bg-transparent focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-ring"
         />
       </Card>
 
@@ -129,7 +129,7 @@ export function ProjectCard({
                     aria-label={`Show image: ${image.alt}`}
                     aria-pressed={activeImageIndex === index}
                     onClick={() => setActiveImageIndex(index)}
-                    className={`relative aspect-[4/3] overflow-hidden rounded-md border bg-background transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring motion-reduce:transition-none ${
+                    className={`relative aspect-[4/3] cursor-pointer overflow-hidden rounded-md border bg-background transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring motion-reduce:transition-none ${
                       activeImageIndex === index
                         ? "border-foreground"
                         : "border-border hover:border-foreground/50"

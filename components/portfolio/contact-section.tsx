@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ArrowUpRight, FileText, GitBranch, Mail } from "lucide-react";
+import { ArrowUpRight, Download, FileText, GitBranch, Mail } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
 import type { PortfolioProfile } from "@/lib/portfolio-data";
@@ -58,16 +57,15 @@ export function ContactSection({ profile }: { profile: PortfolioProfile }) {
           </a>
         ) : null}
         {links.resume ? (
-          <Link
+          <a
             href={links.resume}
-            target="_blank"
-            rel="noreferrer"
+            download
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
             <FileText aria-hidden="true" />
             Resume
-            <ArrowUpRight aria-hidden="true" data-icon="inline-end" />
-          </Link>
+            <Download aria-hidden="true" data-icon="inline-end" />
+          </a>
         ) : null}
       </div>
     </div>

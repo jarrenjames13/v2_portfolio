@@ -13,6 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { getHomeAnchor, navigationItems } from "@/lib/portfolio-data";
+import { useActiveSection } from "@/components/portfolio/section-navigation";
 
 export function MobileNavigation({
   fromProjectsPage = false,
@@ -20,12 +21,13 @@ export function MobileNavigation({
   fromProjectsPage?: boolean;
 }) {
   const [open, setOpen] = useState(false);
+  const activeHref = useActiveSection(fromProjectsPage);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger
         aria-label="Open site navigation"
-        className="inline-flex size-10 items-center justify-center rounded-lg border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring lg:hidden"
+        className="inline-flex size-10 cursor-pointer items-center justify-center rounded-lg border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring lg:hidden"
       >
         <Menu aria-hidden="true" className="size-5" />
       </SheetTrigger>
@@ -42,19 +44,38 @@ export function MobileNavigation({
           </SheetDescription>
         </SheetHeader>
         <nav aria-label="Mobile navigation" className="flex flex-col px-4 py-5">
-          {navigationItems.map((item, index) => (
-            <Link
-              key={item.href}
-              href={getHomeAnchor(item.href, fromProjectsPage)}
-              onClick={() => setOpen(false)}
-              className="flex min-h-12 items-center justify-between border-b border-border/70 px-2 text-base font-medium text-foreground transition-colors hover:text-[var(--portfolio-accent)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
-            >
-              <span>{item.label}</span>
-              <span className="font-mono text-xs text-muted-foreground">
-                0{index + 1}
-              </span>
-            </Link>
-          ))}
+          {navigationItems.map((item, index) => {
+            const isActive = activeHref === item.href;
+
+            return (
+              <Link
+                key={item.href}
+                href={getHomeAnchor(item.href, fromProjectsPage)}
+                aria-current={
+                  isActive ? (fromProjectsPage ? "page" : "location") : undefined
+                }
+                onClick={() => setOpen(false)}
+                className={`flex min-h-12 items-center justify-between border-b border-border/70 px-2 text-base font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring ${
+                  isActive
+                    ? "text-[var(--portfolio-accent)]"
+                    : "text-foreground hover:text-[var(--portfolio-accent)]"
+                }`}
+              >
+                <span className="flex items-center gap-2">
+                  <span
+                    aria-hidden="true"
+                    className={`size-1.5 rounded-full ${
+                      isActive ? "bg-[var(--portfolio-accent)]" : "bg-transparent"
+                    }`}
+                  />
+                  {item.label}
+                </span>
+                <span className="font-mono text-xs text-muted-foreground">
+                  0{index + 1}
+                </span>
+              </Link>
+            );
+          })}
         </nav>
       </SheetContent>
     </Sheet>

@@ -39,8 +39,12 @@ function DialogContent({
   className,
   children,
   showCloseButton = true,
+  closeButtonClassName,
   ...props
-}: DialogPrimitive.Popup.Props & { showCloseButton?: boolean }) {
+}: DialogPrimitive.Popup.Props & {
+  showCloseButton?: boolean;
+  closeButtonClassName?: string;
+}) {
   return (
     <DialogPortal>
       <DialogBackdrop />
@@ -60,7 +64,10 @@ function DialogContent({
               <Button
                 variant="ghost"
                 size="icon-sm"
-                className="absolute right-3 top-3 z-10 bg-background/90"
+                className={cn(
+                  "absolute right-3 top-3 z-10 cursor-pointer bg-transparent text-muted-foreground shadow-none hover:bg-transparent hover:text-foreground focus-visible:bg-transparent",
+                  closeButtonClassName,
+                )}
               />
             }
           >

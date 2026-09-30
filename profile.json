@@ -26,7 +26,7 @@
   "aboutMe": {
     "name": "Jarren James Parungao",
     "title": "Full Stack Developer",
-    "location": "Teresa, Rizal, Philippines",
+    "location": "Philippines",
     "bio": "I am a full-stack developer who enjoys working across the complete software lifecycle, from frontend interfaces and API design to database modeling, testing, deployment, and production support. My professional experience is centered on building systems that are used in real operational environments, including AURORA, a production learning management system and mobile application, and OfficeSales System, an internal sales and e-commerce platform.",
     "engineeringApproach": "I focus on practical engineering: understanding the actual problem, keeping solutions maintainable, testing critical behavior, and making changes that can be verified in production. I regularly work on authentication, role-based workflows, high-concurrency backend behavior, database performance, CI/CD, and cloud infrastructure.",
     "aiAssistedWorkflow": "I use AI-assisted coding tools as part of my daily development workflow to accelerate implementation, investigate bugs, review code and implementation approaches, improve testing, identify edge cases, and reduce issues before they reach production. I treat AI as an engineering multiplier while validating outputs against the codebase, tests, documentation, and real application behavior.",
@@ -35,7 +35,7 @@
       "linkedin": "https://www.linkedin.com/in/jarrenjames",
       "email": "jarrenjames13@gmail.com",
       "portfolio": "https://portfolio.jjparungao.online/",
-      "resume": "https://drive.google.com/file/d/19zRRwezzSm-f34geb6QciUC3L70PTna2/view?usp=sharing"
+      "resume": "/documents/Jarren_James_CV.pdf"
     }
   },
   "techStack": {
