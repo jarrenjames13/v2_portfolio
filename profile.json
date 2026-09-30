@@ -32,6 +32,8 @@
     "aiAssistedWorkflow": "I use AI-assisted coding tools as part of my daily development workflow to accelerate implementation, investigate bugs, review code and implementation approaches, improve testing, identify edge cases, and reduce issues before they reach production. I treat AI as an engineering multiplier while validating outputs against the codebase, tests, documentation, and real application behavior.",
     "links": {
       "github": "https://github.com/jarrenjames13",
+      "linkedin": "https://www.linkedin.com/in/jarrenjames",
+      "email": "jarrenjames13@gmail.com",
       "portfolio": "https://portfolio.jjparungao.online/",
       "resume": "https://drive.google.com/file/d/19zRRwezzSm-f34geb6QciUC3L70PTna2/view?usp=sharing"
     }
@@ -91,6 +93,26 @@
         {
           "src": "/projects/aurora/preview.webp",
           "alt": "AURORA application preview"
+        },
+        {
+          "src": "/projects/aurora/student_dashboard.png",
+          "alt": "AURORA student dashboard"
+        },
+        {
+          "src": "/projects/aurora/student_course_overview.png",
+          "alt": "AURORA student course overview"
+        },
+        {
+          "src": "/projects/aurora/admin_dashboard.png",
+          "alt": "AURORA administrator dashboard"
+        },
+        {
+          "src": "/projects/aurora/modules_management.png",
+          "alt": "AURORA module management screen"
+        },
+        {
+          "src": "/projects/aurora/login.png",
+          "alt": "AURORA login screen"
         }
       ],
       "technologies": [
@@ -121,8 +143,8 @@
       "wip": false,
       "images": [
         {
-          "src": "/projects/aurora/preview.webp",
-          "alt": "AURORA learning platform preview"
+          "src": "/projects/aurora-mobile/WIP_placeholder.png",
+          "alt": "AURORA mobile application work-in-progress preview"
         }
       ],
       "technologies": [
@@ -223,6 +245,22 @@
         {
           "src": "/projects/cacf-photobooth-ama/preview.webp",
           "alt": "Charlie and the Chocolate Factory Photobooth AMA application preview"
+        },
+        {
+          "src": "/projects/cacf-photobooth-ama/capture_page.png",
+          "alt": "Photobooth capture page"
+        },
+        {
+          "src": "/projects/cacf-photobooth-ama/gallery_page.png",
+          "alt": "Photobooth gallery page"
+        },
+        {
+          "src": "/projects/cacf-photobooth-ama/successful_capture.png",
+          "alt": "Photobooth successful capture screen with QR retrieval"
+        },
+        {
+          "src": "/projects/cacf-photobooth-ama/timer.png",
+          "alt": "Photobooth capture timer screen"
         }
       ],
       "technologies": [
@@ -255,16 +293,16 @@
       "wip": false,
       "images": [
         {
+          "src": "/projects/karen-bot/preview.webp",
+          "alt": "Karen monitoring bot icon"
+        },
+        {
           "src": "/projects/karen-bot/available_commands.png",
           "alt": "Karen bot's Telegram command list"
         },
         {
           "src": "/projects/karen-bot/sample_startup.png",
           "alt": "Karen bot reporting a monitored server startup"
-        },
-        {
-          "src": "/projects/karen-bot/bot_icon.jpeg",
-          "alt": "Karen monitoring bot icon"
         }
       ],
       "technologies": [
@@ -292,6 +330,38 @@
         {
           "src": "/projects/snap-frame/preview.webp",
           "alt": "SnapFrame application preview"
+        },
+        {
+          "src": "/projects/snap-frame/home_hero.png",
+          "alt": "SnapFrame homepage hero"
+        },
+        {
+          "src": "/projects/snap-frame/home_about.png",
+          "alt": "SnapFrame about section"
+        },
+        {
+          "src": "/projects/snap-frame/home_footer.png",
+          "alt": "SnapFrame homepage footer"
+        },
+        {
+          "src": "/projects/snap-frame/capture.png",
+          "alt": "SnapFrame photo capture screen"
+        },
+        {
+          "src": "/projects/snap-frame/gallery.png",
+          "alt": "SnapFrame photo gallery"
+        },
+        {
+          "src": "/projects/snap-frame/border_studio.png",
+          "alt": "SnapFrame border studio"
+        },
+        {
+          "src": "/projects/snap-frame/timer.png",
+          "alt": "SnapFrame photo capture timer"
+        },
+        {
+          "src": "/projects/snap-frame/login.png",
+          "alt": "SnapFrame login screen"
         }
       ],
       "technologies": [
