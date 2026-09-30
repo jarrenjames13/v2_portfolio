@@ -1,9 +1,13 @@
-import Script from "next/script";
+import { PORTFOLIO_THEME_STORAGE_KEY } from "@/lib/portfolio-theme";
 
-const initializeTheme = `(()=>{let theme="dark";try{const saved=window.localStorage.getItem("portfolio-theme");if(saved==="light"||saved==="dark")theme=saved}catch{}const root=document.documentElement;root.classList.toggle("dark",theme==="dark");root.style.colorScheme=theme})();`;
+const initializeTheme = `(()=>{var root=document.documentElement,theme="dark";try{var saved=localStorage.getItem(${JSON.stringify(PORTFOLIO_THEME_STORAGE_KEY)});if(saved==="light"||saved==="dark")theme=saved}catch(e){}root.classList.toggle("dark",theme==="dark");root.style.colorScheme=theme})();`;
 
 export function ThemeScript() {
-  // Next 16 documents beforeInteractive in the App Router root layout.
-  // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
-  return <Script id="portfolio-theme-init" strategy="beforeInteractive">{initializeTheme}</Script>;
+  return (
+    <script
+      type={typeof window === "undefined" ? "text/javascript" : "text/plain"}
+      suppressHydrationWarning
+      dangerouslySetInnerHTML={{ __html: initializeTheme }}
+    />
+  );
 }

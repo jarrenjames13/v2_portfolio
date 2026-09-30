@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeScript } from "@/components/portfolio/theme-script";
 import { profile } from "@/lib/portfolio-data";
 import "./globals.css";
+import "react-github-calendar/tooltips.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

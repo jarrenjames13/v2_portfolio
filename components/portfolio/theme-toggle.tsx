@@ -1,47 +1,18 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 
-type Theme = "light" | "dark";
-
-const themeChangeEvent = "portfolio-theme-change";
-
-function subscribe(onStoreChange: () => void) {
-  window.addEventListener(themeChangeEvent, onStoreChange);
-  return () => window.removeEventListener(themeChangeEvent, onStoreChange);
-}
-
-function getThemeSnapshot(): Theme {
-  return document.documentElement.classList.contains("dark") ? "dark" : "light";
-}
-
-function getServerThemeSnapshot(): Theme {
-  return "dark";
-}
+import {
+  setPortfolioTheme,
+  usePortfolioTheme,
+} from "@/components/portfolio/use-portfolio-theme";
 
 export function ThemeToggle() {
-  const theme = useSyncExternalStore(
-    subscribe,
-    getThemeSnapshot,
-    getServerThemeSnapshot,
-  );
+  const theme = usePortfolioTheme();
   const nextTheme = theme === "dark" ? "light" : "dark";
 
   function toggleTheme() {
-    const root = document.documentElement;
-    const next = root.classList.contains("dark") ? "light" : "dark";
-
-    root.classList.toggle("dark", next === "dark");
-    root.style.colorScheme = next;
-
-    try {
-      window.localStorage.setItem("portfolio-theme", next);
-    } catch {
-      // The in-memory theme still works when storage is unavailable.
-    }
-
-    window.dispatchEvent(new Event(themeChangeEvent));
+    setPortfolioTheme(nextTheme);
   }
 
   return (
