@@ -121,8 +121,8 @@
       "wip": false,
       "images": [
         {
-          "src": "/projects/aurora-mobile/preview.webp",
-          "alt": "AURORA mobile application preview"
+          "src": "/projects/aurora/preview.webp",
+          "alt": "AURORA learning platform preview"
         }
       ],
       "technologies": [
@@ -154,8 +154,8 @@
       "wip": true,
       "images": [
         {
-          "src": "/projects/convox/preview.webp",
-          "alt": "Convox application preview"
+          "src": "/projects/convox/WIP_placeholder.png",
+          "alt": "Convox work-in-progress placeholder"
         }
       ],
       "technologies": [
@@ -185,8 +185,8 @@
       "wip": true,
       "images": [
         {
-          "src": "/projects/calorijuan-mobile/preview.webp",
-          "alt": "CaloriJuan application preview"
+          "src": "/projects/calorijuan-mobile/WIP_placeholder.png",
+          "alt": "CaloriJuan work-in-progress placeholder"
         }
       ],
       "technologies": [
@@ -255,8 +255,16 @@
       "wip": false,
       "images": [
         {
-          "src": "/projects/karen-bot/preview.webp",
-          "alt": "Karen monitoring bot preview"
+          "src": "/projects/karen-bot/available_commands.png",
+          "alt": "Karen bot's Telegram command list"
+        },
+        {
+          "src": "/projects/karen-bot/sample_startup.png",
+          "alt": "Karen bot reporting a monitored server startup"
+        },
+        {
+          "src": "/projects/karen-bot/bot_icon.jpeg",
+          "alt": "Karen monitoring bot icon"
         }
       ],
       "technologies": [
@@ -318,8 +326,8 @@
       "wip": false,
       "images": [
         {
-          "src": "/projects/officesales-system/preview.webp",
-          "alt": "OfficeSales System application preview"
+          "src": "/projects/officesales-system/os_login.png",
+          "alt": "OfficeSales System login page"
         }
       ],
       "technologies": [
