@@ -39,7 +39,7 @@
     }
   },
   "techStack": {
-    "languages": ["Python", "TypeScript", "JavaScript", "SQL"],
+    "languages": ["Python", "TypeScript", "JavaScript", "SQL", "PHP"],
     "frontend": [
       "React",
       "Next.js",
@@ -51,7 +51,7 @@
       "Bootstrap",
       "Vanilla JavaScript"
     ],
-    "backend": ["FastAPI", "Node.js", "Express.js", "REST APIs"],
+    "backend": ["FastAPI", "Flask", "Node.js", "Express.js", "Nest.js", "REST APIs"],
     "databases": ["MySQL", "PostgreSQL", "Microsoft SQL Server", "MongoDB"],
     "testing": [
       "Vitest",

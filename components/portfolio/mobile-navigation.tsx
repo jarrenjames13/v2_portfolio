@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Download, Menu } from "lucide-react";
 
 import {
   Sheet,
@@ -12,7 +12,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { getHomeAnchor, navigationItems } from "@/lib/portfolio-data";
+import { buttonVariants } from "@/components/ui/button";
+import { getHomeAnchor, navigationItems, profile } from "@/lib/portfolio-data";
 import { useActiveSection } from "@/components/portfolio/section-navigation";
 
 export function MobileNavigation({
@@ -77,6 +78,23 @@ export function MobileNavigation({
             );
           })}
         </nav>
+        {profile.aboutMe.links.resume ? (
+          <div className="mx-4 border-t border-border pt-4">
+            <a
+              href={profile.aboutMe.links.resume}
+              download
+              onClick={() => setOpen(false)}
+              className={buttonVariants({
+                variant: "outline",
+                size: "lg",
+                className: "min-h-11 w-full cursor-pointer justify-between px-4",
+              })}
+            >
+              Download resume
+              <Download aria-hidden="true" data-icon="inline-end" />
+            </a>
+          </div>
+        ) : null}
       </SheetContent>
     </Sheet>
   );

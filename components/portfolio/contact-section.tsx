@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, FileText, GitBranch, Mail } from "lucide-react";
+import { ArrowUpRight, GitBranch, Mail } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
 import type { PortfolioProfile } from "@/lib/portfolio-data";
@@ -54,17 +54,6 @@ export function ContactSection({ profile }: { profile: PortfolioProfile }) {
           >
             <Mail aria-hidden="true" />
             Email
-          </a>
-        ) : null}
-        {links.resume ? (
-          <a
-            href={links.resume}
-            download
-            className={buttonVariants({ variant: "outline", size: "lg" })}
-          >
-            <FileText aria-hidden="true" />
-            Resume
-            <Download aria-hidden="true" data-icon="inline-end" />
           </a>
         ) : null}
       </div>

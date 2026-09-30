@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Download, FileText, GitBranch, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Download, GitBranch, MapPin } from "lucide-react";
 
 import { AgentTerminal } from "@/components/portfolio/agent-terminal";
 import { ContactSection } from "@/components/portfolio/contact-section";
@@ -78,7 +78,6 @@ export default function Home() {
                     download
                     className={buttonVariants({ variant: "ghost", size: "lg" })}
                   >
-                    <FileText aria-hidden="true" />
                     Resume
                     <Download aria-hidden="true" data-icon="inline-end" />
                   </a>
